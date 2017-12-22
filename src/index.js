@@ -124,6 +124,19 @@ export const omitNull = (obj: Object): Object => _.omitBy(obj, _.isNull);
  */
 export const omitNil = (obj: Object): Object => _.omitBy(obj, _.isNil);
 
+/**
+ * Formats bytes in a readable string.
+ * @param {number} bytes The bytes to format.
+ * @return {string} The formatted bytes.
+ */
+export const formatBytes = (bytes: number): string => {
+  const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+  if (bytes === 0) return 'n/a';
+  const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)), 10);
+  if (i === 0) return `${bytes} ${sizes[i]}`;
+  return `${(bytes / 1024 ** i).toFixed(1)} ${sizes[i]}`;
+};
+
 export default {
   delay,
   formatMacAddress,
@@ -137,4 +150,5 @@ export default {
   omitUndefined,
   omitNull,
   omitNil,
+  formatBytes,
 };
