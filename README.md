@@ -50,6 +50,9 @@ have an null value.</p>
 <dd><p>Creates a new object composed of all the properties of the input object that do not
 have an undefined or null value.</p>
 </dd>
+<dt><a href="#formatBytes">formatBytes</a> ⇒ <code>String</code></dt>
+<dd><p>Formats bytes in a readable string.</p>
+</dd>
 </dl>
 
 <a name="delay"></a>
@@ -208,3 +211,13 @@ have an undefined or null value.
 | Param | Type | Description |
 | --- | --- | --- |
 | obj | <code>Object</code> | The input object. |
+
+## formatBytes ⇒ <code>String</code>
+Formats bytes in a readable string.
+
+**Kind**: global variable
+**Returns**: <code>String</code> - The formatted bytes.
+
+| Param | Type | Description |
+| --- | --- | --- |
+| bytes | <code>Number</code> | The bytes to format. |

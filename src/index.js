@@ -126,8 +126,8 @@ export const omitNil = (obj: Object): Object => _.omitBy(obj, _.isNil);
 
 /**
  * Formats bytes in a readable string.
- * @param {number} bytes The bytes to format.
- * @return {string} The formatted bytes.
+ * @param {Number} bytes The bytes to format.
+ * @return {String} The formatted bytes.
  */
 export const formatBytes = (bytes: number): string => {
   const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
