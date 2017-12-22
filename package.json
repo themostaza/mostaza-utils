@@ -16,7 +16,7 @@
     "lint": "eslint src"
   },
   "dependencies": {
-    "lodash": "4.17.4"
+    "lodash": ">=4"
   },
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.31",
